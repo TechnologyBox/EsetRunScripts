@@ -1,5 +1,5 @@
 ﻿#Get Storage Key parameter
-param([string]$storagekey)
+#param([string]$storagekey)
 
 #Trust NuGet
 Set-PackageSource -Name "https://www.powershellgallery.com/api/v2" -Trusted
