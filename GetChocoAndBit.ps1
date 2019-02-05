@@ -1,6 +1,10 @@
 ﻿#Get Storage Key parameter
 param([string]$storagekey)
 
+#Trust NuGet
+Set-PackageSource -Name "https://www.powershellgallery.com/api/v2" -Trusted
+#Install NuGet
+Install-PackageProvider -Name NuGet -Force -MinimumVersion 2.8.5.201
 #Install Azure AZ Module
 Install-Module -Name Az -AllowClobber
 #Enable AZ aliases
