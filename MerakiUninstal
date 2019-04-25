@@ -1,2 +1,0 @@
-$app = Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match "Meraki Systems Manager Agent"}
-$app.Uninstall()
